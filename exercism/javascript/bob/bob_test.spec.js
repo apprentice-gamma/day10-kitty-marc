@@ -28,7 +28,7 @@ describe("Bob", function() {
     expect(result).toEqual('Whatever.');
   });
 
-  xit("forceful questions", function() {
+  it("forceful questions", function() {
     var result = bob.hey('WHAT THE HELL WERE YOU THINKING?');
     expect(result).toEqual('Whoa, chill out!');
   });
