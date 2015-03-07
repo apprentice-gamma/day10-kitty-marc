@@ -8,10 +8,11 @@ var Bob = function() {};
 Bob.prototype.hey = function(input) {
 
 	var says = input.trim();
-    if (says.charAt(says.length-1) === "?"){
-        return 'Sure.';
-    }else if (input === input.toUpperCase()){
+	
+	if (says === says.toUpperCase()){
         return 'Whoa, chill out!';
+    } else if (says.charAt(says.length-1) === "?"){
+        return 'Sure.';
     }else{
         return "Whatever.";
     }
