@@ -1,15 +1,15 @@
-console.log("You got this.");
+//console.log("You got this.");
 
 var words = function() {};
 
-var wordObjectToOutput = {};
+var ObjectToOutput = {};
 
 words.prototype.count = function(input) {
 	
 	var userInput = input.trim();
 	var wordsToCount = userInput.split(" ");	
 
-	console.log(wordsToCount);
+	//console.log(wordsToCount);
 
 	//FIGURE OUT HOW MANY TIMES A WORD APPEARS:
 	//Here are all the different words in an array. 
@@ -22,38 +22,16 @@ words.prototype.count = function(input) {
 		var filter; 
 		for (word in wordsToCount) {
 			filter = new RegExp(wordsToCount[word], "g");
-			console.log(wordsToCount[word]);
-			matches = origString.match(filter);	
-		}
+			//console.log(wordsToCount[word]);
+			matches = origString.match(filter);
+
+		} 
+		ObjectToOutput[matches[0]] = matches.length;
 		return matches.length;
 	};
+
 	console.log(numberOfMatches(wordsToCount, userInput));
-
-
-	// function numberOfMatches(wordArray){
-	// 	for (var word in wordArray){
-	// 		var matchedWords = wordArray.match(word);
-	// 	}
-	// 	return matchedWords.length;
-	// }
-	// console.log(numberOfMatches(input));
-	
-
-
-	// var numberOfOccurrences = function(wordToMatch){
-	// 	var matchedWords = wordsToCount.match( wordToMatch );
-	// 	return matchedWords.length;
-	// 	//gives us a number that is the length of the array returned by the match() method.
-	// };
-
-	// console.log("The number of times I found " + input + " is " + numberOfOccurrences(wordsToCount));		
-	//assign the word as a key in an object
-
-
-
-	
-
-	//console.log(wordObjectToOutput);
+	console.log(ObjectToOutput);
 
 };
 
