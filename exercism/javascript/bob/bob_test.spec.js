@@ -68,7 +68,7 @@ describe("Bob", function() {
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xit("statement containing question mark", function() {
+  it("statement containing question mark", function() {
     var result = bob.hey('Ending with a ? means a question.');
     expect(result).toEqual('Whatever.');
   });
