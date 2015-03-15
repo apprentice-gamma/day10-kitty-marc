@@ -53,7 +53,7 @@ describe("Bob", function() {
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xit("shouting with umlauts", function() {
+  it("shouting with umlauts", function() {
     var result = bob.hey("\xdcML\xc4\xdcTS!");
     expect(result).toEqual('Whoa, chill out!');
   });
