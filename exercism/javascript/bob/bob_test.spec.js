@@ -58,7 +58,7 @@ describe("Bob", function() {
     expect(result).toEqual('Whoa, chill out!');
   });
 
-  xit("calmly speaking about umlauts", function() {
+  it("calmly speaking about umlauts", function() {
     var result = bob.hey("\xfcML\xe4\xdcTS");
     expect(result).toEqual('Whatever.');
   });
