@@ -7,13 +7,17 @@ var Bob = function() {};
 
 Bob.prototype.hey = function(input) {
 
-	var says = input.trim();
+	var sayToBob = input.trim();
 	
-	if (says === says.toUpperCase()){
+	if(input = ""){
+		return "Fine. Be that way!";
+	} else if( sayToBob.match(/\d/) && !sayToBob.match(/[a-zA-Z]/) ){
+		return "Whatever.";
+	} else if (sayToBob === sayToBob.toUpperCase() ){
         return 'Whoa, chill out!';
-    } else if (says.charAt(says.length-1) === "?"){
+    } else if (sayToBob.charAt(sayToBob.length-1) === "?"){
         return 'Sure.';
-    }else{
+	} else {
         return "Whatever.";
     }
 };
