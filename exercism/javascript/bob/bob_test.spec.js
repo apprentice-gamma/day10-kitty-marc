@@ -63,7 +63,7 @@ describe("Bob", function() {
     expect(result).toEqual('Whatever.');
   });
 
-  xit("shouting with no exclamation mark", function () {
+  it("shouting with no exclamation mark", function () {
     var result = bob.hey('I HATE YOU');
     expect(result).toEqual('Whoa, chill out!');
   });
