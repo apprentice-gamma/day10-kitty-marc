@@ -73,7 +73,7 @@ describe("Bob", function() {
     expect(result).toEqual('Whatever.');
   });
 
-  xit("prattling on", function () {
+  it("prattling on", function () {
     var result = bob.hey('Wait! Hang on.  Are you going to be OK?');
     expect(result).toEqual('Sure.');
   });
