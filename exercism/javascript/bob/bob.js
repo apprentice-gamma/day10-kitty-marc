@@ -9,7 +9,7 @@ Bob.prototype.hey = function(input) {
 
 	var sayToBob = input.trim();
 	
-	if(input == ""){
+	if(sayToBob === "" || sayToBob === sayToBob.match(/\s+/g)){
 		return "Fine. Be that way!";
 	} else if( sayToBob.match(/\D/) && !sayToBob.match(/[a-zA-Z]/) && sayToBob.charAt(sayToBob.length-1) !== "?"){
 		//only numbers
