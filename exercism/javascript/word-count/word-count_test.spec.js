@@ -1,6 +1,7 @@
-var words = require('./word-count');
+var words = require('./word-count.js');
 
-describe("words()", function() {
+describe("Word count", function() {
+ 
   it("counts one word", function() {
     var expectedCounts = { word: 1 };
     expect(words("word")).toEqual(expectedCounts);
